@@ -24,7 +24,7 @@ with(dat_2, plot(x = datetime, y = Voltage, type =  "l", ylab = "Voltage", main 
 with(dat_2, plot(x = datetime, y = Sub_metering_1, type =  "l", ylab = "Energy sub metering", main = "", xlab = ""))
 with(dat_2, lines(x = datetime, y = Sub_metering_2, col = "red"))
 with(dat_2, lines(x = datetime, y = Sub_metering_3, col = "blue"))
-legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n")
 # bottom right
 with(dat_2, plot(x = datetime, y = Global_reactive_power, type =  "l", ylab = "Global_reactive_power", main = "", xlab = "datetime"))
 
